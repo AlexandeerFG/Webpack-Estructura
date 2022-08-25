@@ -1,0 +1,6 @@
+/*
+** Babel se asegura de utilizar caracteristicas modernas de javascript y lo traduce al equivalente del estandar que se necesite
+*/
+{
+  "presets": ["@babel/preset-env"]
+}
