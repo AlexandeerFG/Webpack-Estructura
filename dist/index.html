@@ -1,1 +1,41 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Prueba Web Pack</title><script defer="defer" src="main.28485c685577e26b500f.js"></script><link href="main.1d4affc2b1f2cabbc048.css" rel="stylesheet"></head><body><img src="assets/img/webpack-logo.png" alt="Webpack logo"></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Web Pack</title>
+<script defer src="main.js"></script></head>
+<body>
+    <div class="container">
+        <div class="row align-items-end mt-3">
+            <input type="hidden" id="digestiones" name="digestiones" value="">
+            <div class="col-3">
+                <label for="cert">Certificado</label>
+                <input type="file" id="cert" name="cert" accept=".cer" class="form-control mt-2"/>
+            </div>
+            <div class="col-3">
+                <label for="key">Llave</label>
+                <input type="file" id="key" name="key" accept=".key" class="form-control mt-2"/>
+            </div>
+            <div class="col-3">
+                <label for="pass">Contrasenia</label>
+                <input type="text" id="pass" name="pass" value="B4nc0m3r" class="form-control mt-2"/>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-success" type="button" id="btn-firmar">Firmar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../src/firmaElectronica/Firmav2.js"></script>
+    <script>
+        window.fielnetPJv2 = new fielnetv2.Firma({ 
+            subDirectory: "../src/firmaElectronica/scriptsFirma",
+            ajaxAsync: false,
+            controller: ''});
+
+        console.log(window);
+    </script>   
+</body>
+</html>

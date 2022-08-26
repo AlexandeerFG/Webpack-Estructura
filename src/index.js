@@ -1,5 +1,4 @@
-import { saludar } from './js/components.js';
-import './styles.css';
-const nombre = ' Test ';
+import { firmav3 } from './firmav3/app';
 
-saludar( nombre );
+console.log(firmav3);
+

@@ -66,12 +66,12 @@ module.exports = {
             ignoreOrder: false
         }),
 
-        new CopyPlugin({   //-- plugin para copiar y mover recursos
+        /* new CopyPlugin({   //-- plugin para copiar y mover recursos
             patterns: [
                 { from: 'src/assets/', to: 'assets/'}
             ]
             
-        })
+        }) */
 
     ],
 }
